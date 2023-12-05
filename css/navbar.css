@@ -10,6 +10,14 @@
     width: 150px !important;
   }
 }
+@media screen and (max-width: 595px) {
+  nav .nav-item-logo {
+    order: -1;
+  }
+  nav .nav-item-home {
+    display: none;
+  }
+}
 @media screen and (max-width: 595px) and (min-width: 321px) {
   nav {
     padding: 5px !important;
@@ -22,14 +30,6 @@
   }
   nav .navbar-brand-img img {
     width: 70px !important;
-  }
-}
-@media screen and (max-width: 595px) {
-  nav .nav-item-logo {
-    order: -1;
-  }
-  nav .nav-item-home {
-    display: none;
   }
 }
 @media screen and (max-width: 321px) {
@@ -60,7 +60,7 @@ nav .navbar-nav {
   justify-content: space-evenly;
   align-items: end;
   width: 100%;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   gap: 25px;
   padding-bottom: 0.2rem;
 }
