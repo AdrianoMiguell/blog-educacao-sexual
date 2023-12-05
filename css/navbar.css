@@ -3,6 +3,7 @@
     font-size: 13pt !important;
   }
   nav .navbar-nav {
+    padding: 0 6rem !important;
     gap: 40px !important;
   }
   nav .navbar-brand-img img {
@@ -23,6 +24,14 @@
     width: 70px !important;
   }
 }
+@media screen and (max-width: 595px) {
+  nav .nav-item-logo {
+    order: -1;
+  }
+  nav .nav-item-home {
+    display: none;
+  }
+}
 @media screen and (max-width: 321px) {
   nav {
     padding: 2px !important;
@@ -39,12 +48,6 @@
   nav .navbar-brand-img img {
     width: 60px !important;
   }
-  nav .nav-item-logo {
-    order: -1;
-  }
-  nav .nav-item-home {
-    display: none;
-  }
 }
 
 nav {
@@ -54,10 +57,10 @@ nav {
 nav .navbar-nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: end;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 .5rem;
   gap: 25px;
   padding-bottom: 0.2rem;
 }
