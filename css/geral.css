@@ -1,0 +1,43 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap");
+
+@import "./navbar.css";
+@import "./parallax.css";
+@import "./topics.css";
+@import "./footer.css";
+
+:root {
+  --main-c: 7, 11, 43;
+  --sec-c: 245, 92, 176;
+  --tert-c: 49, 58, 67;
+  --light-c: 251, 251, 255;
+  --dark-c: 12, 12, 24;
+}
+
+#colors {
+  color: rgb(7, 11, 43);
+  color: rgb(245, 92, 176);
+  color: rgb(49, 58, 67);
+  /* color: rgb(74, 81, 87); */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+body {
+  background-color: rgb(var(--light-c));
+  min-height: 100vh;
+  font-size: 12pt;
+}
+a {
+  text-decoration: none;
+}
+
+dl,
+ol,
+ul {
+  margin: 0;
+}
