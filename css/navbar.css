@@ -9,7 +9,7 @@
     width: 150px !important;
   }
 }
-@media screen and (max-width: 595px) {
+@media screen and (max-width: 595px) and (min-width: 321px) {
   nav {
     padding: 5px !important;
   }
@@ -21,6 +21,29 @@
   }
   nav .navbar-brand-img img {
     width: 70px !important;
+  }
+}
+@media screen and (max-width: 321px) {
+  nav {
+    padding: 2px !important;
+  }
+  nav * {
+    font-size: 7pt !important;
+  }
+  nav .navbar-nav {
+    gap: 8px !important;
+  }
+  nav .nav-item .nav-link {
+    padding: 0.5px !important;
+  }
+  nav .navbar-brand-img img {
+    width: 60px !important;
+  }
+  nav .nav-item-logo {
+    order: -1;
+  }
+  nav .nav-item-home {
+    display: none;
   }
 }
 
@@ -36,9 +59,9 @@ nav .navbar-nav {
   width: 100%;
   padding: 0 1rem;
   gap: 25px;
-  padding-bottom: .2rem;
+  padding-bottom: 0.2rem;
 }
-nav .nav-item{
+nav .nav-item {
   --bs-navbar-active-color: rgb(var(--sec-c));
   --bs-navbar-focus-color: rgb(var(--sec-c));
   --bs-navbar-hover-color: rgb(var(--sec-c));
